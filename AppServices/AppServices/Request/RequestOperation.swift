@@ -21,7 +21,7 @@ public enum RequestOperationError: Error {
 
 public class RequestOperation: Operation {
     private let timeout: TimeInterval = 60.0
-    private let session = URLSession.shared
+    internal var session = URLSession.shared
     
     let route: RouterManagerConvertible
     let requestModel: SecondsRequest

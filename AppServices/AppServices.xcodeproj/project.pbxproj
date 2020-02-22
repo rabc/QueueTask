@@ -12,8 +12,9 @@
 		143E3CEA24013F8900F9A127 /* AppServices.h in Headers */ = {isa = PBXBuildFile; fileRef = 143E3CDC24013F8800F9A127 /* AppServices.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		143E3CF524013FD600F9A127 /* RequestOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143E3CF424013FD600F9A127 /* RequestOperation.swift */; };
 		143E3CF824013FFE00F9A127 /* Seconds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143E3CF724013FFE00F9A127 /* Seconds.swift */; };
-		143E3CFB2401403B00F9A127 /* SecondsServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143E3CFA2401403B00F9A127 /* SecondsServices.swift */; };
 		143E3D382401489F00F9A127 /* RouterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143E3D372401489F00F9A127 /* RouterManager.swift */; };
+		143E3D3A2401D74600F9A127 /* RequestOperationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143E3D392401D74600F9A127 /* RequestOperationTests.swift */; };
+		143E3D3D2401D7EE00F9A127 /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143E3D3C2401D7EE00F9A127 /* MockURLSession.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,8 +36,9 @@
 		143E3CE924013F8900F9A127 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		143E3CF424013FD600F9A127 /* RequestOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestOperation.swift; sourceTree = "<group>"; };
 		143E3CF724013FFE00F9A127 /* Seconds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seconds.swift; sourceTree = "<group>"; };
-		143E3CFA2401403B00F9A127 /* SecondsServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondsServices.swift; sourceTree = "<group>"; };
 		143E3D372401489F00F9A127 /* RouterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterManager.swift; sourceTree = "<group>"; };
+		143E3D392401D74600F9A127 /* RequestOperationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestOperationTests.swift; sourceTree = "<group>"; };
+		143E3D3C2401D7EE00F9A127 /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +82,6 @@
 			isa = PBXGroup;
 			children = (
 				143E3D362401489A00F9A127 /* Managers */,
-				143E3CF92401403000F9A127 /* Services */,
 				143E3CF624013FEE00F9A127 /* Models */,
 				143E3CF324013FCC00F9A127 /* Request */,
 				143E3CDC24013F8800F9A127 /* AppServices.h */,
@@ -92,8 +93,10 @@
 		143E3CE624013F8900F9A127 /* AppServicesTests */ = {
 			isa = PBXGroup;
 			children = (
+				143E3D3B2401D7EA00F9A127 /* Mocks */,
 				143E3CE724013F8900F9A127 /* AppServicesTests.swift */,
 				143E3CE924013F8900F9A127 /* Info.plist */,
+				143E3D392401D74600F9A127 /* RequestOperationTests.swift */,
 			);
 			path = AppServicesTests;
 			sourceTree = "<group>";
@@ -114,20 +117,20 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		143E3CF92401403000F9A127 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				143E3CFA2401403B00F9A127 /* SecondsServices.swift */,
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
 		143E3D362401489A00F9A127 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
 				143E3D372401489F00F9A127 /* RouterManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		143E3D3B2401D7EA00F9A127 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				143E3D3C2401D7EE00F9A127 /* MockURLSession.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,7 +244,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				143E3CF824013FFE00F9A127 /* Seconds.swift in Sources */,
-				143E3CFB2401403B00F9A127 /* SecondsServices.swift in Sources */,
 				143E3D382401489F00F9A127 /* RouterManager.swift in Sources */,
 				143E3CF524013FD600F9A127 /* RequestOperation.swift in Sources */,
 			);
@@ -252,6 +254,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				143E3CE824013F8900F9A127 /* AppServicesTests.swift in Sources */,
+				143E3D3D2401D7EE00F9A127 /* MockURLSession.swift in Sources */,
+				143E3D3A2401D74600F9A127 /* RequestOperationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

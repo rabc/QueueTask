@@ -51,7 +51,7 @@ public class SecondsRepository {
         }
     }
     
-    func queueOperation(name: String, hour: String, seconds: String, handler: @escaping HandlerCallback) {
+    private func queueOperation(name: String, hour: String, seconds: String, handler: @escaping HandlerCallback) {
         let request = SecondsRequest(seconds: seconds)
         
         let operation = RequestOperation(name: name, route: EndpointsRouter.seconds, requestModel: request, success: { [userDefaults] (data) in
@@ -77,9 +77,9 @@ public class SecondsRepository {
     
     public func flush() {
         let storedDates: [HourData] = userDefaults.get(.hour) ?? []
-        print(storedDates)
         
-        storedDates.filter { !$0.sent && !queue.hasOperation(name: $0.hour) }
+        storedDates
+            .filter { !$0.sent && !queue.hasOperation(name: $0.hour) }
             .forEach {
                 queueOperation(name: $0.hour, hour: $0.hour, seconds: $0.seconds) {
                     print("Flushed \($0.seconds) with id \($0.id)")

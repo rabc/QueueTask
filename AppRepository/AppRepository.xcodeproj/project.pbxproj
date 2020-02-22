@@ -14,6 +14,7 @@
 		143E3D262401411700F9A127 /* AppServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 143E3D252401411700F9A127 /* AppServices.framework */; };
 		143E3D2B240143A100F9A127 /* DateFormatCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143E3D2A240143A100F9A127 /* DateFormatCacheManager.swift */; };
 		143E3D2D2401443D00F9A127 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143E3D2C2401443D00F9A127 /* UserDefaultsManager.swift */; };
+		143E3D3F2401D9AC00F9A127 /* SecondsRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143E3D3E2401D9AC00F9A127 /* SecondsRepositoryTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		143E3D252401411700F9A127 /* AppServices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AppServices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		143E3D2A240143A100F9A127 /* DateFormatCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatCacheManager.swift; sourceTree = "<group>"; };
 		143E3D2C2401443D00F9A127 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		143E3D3E2401D9AC00F9A127 /* SecondsRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondsRepositoryTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 			children = (
 				143E3D15240140E100F9A127 /* AppRepositoryTests.swift */,
 				143E3D17240140E100F9A127 /* Info.plist */,
+				143E3D3E2401D9AC00F9A127 /* SecondsRepositoryTests.swift */,
 			);
 			path = AppRepositoryTests;
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				143E3D16240140E100F9A127 /* AppRepositoryTests.swift in Sources */,
+				143E3D3F2401D9AC00F9A127 /* SecondsRepositoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
