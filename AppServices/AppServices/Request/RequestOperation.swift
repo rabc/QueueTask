@@ -28,7 +28,7 @@ public class RequestOperation: Operation {
     let success: (Data) -> Void
     let fail: (Error?) -> Void
     
-    public required init(route: RouterManagerConvertible, requestModel: SecondsRequest,
+    public required init(name: String, route: RouterManagerConvertible, requestModel: SecondsRequest,
                          success: @escaping (Data) -> Void, fail: @escaping (Error?) -> Void) {
         self.route = route
         self.requestModel = requestModel
@@ -36,6 +36,7 @@ public class RequestOperation: Operation {
         self.fail = fail
         
         super.init()
+        self.name = name
     }
     
     public override func main() {
@@ -53,6 +54,7 @@ public class RequestOperation: Operation {
         session.dataTask(with: request) { [fail, success] (data, response, error) in
             defer { semaphore.signal() }
             
+            sleep(2)
             guard let data = data else {
                 fail(error)
                 return

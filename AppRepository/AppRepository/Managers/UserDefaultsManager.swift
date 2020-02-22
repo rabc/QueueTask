@@ -14,16 +14,28 @@ public final class UserDefaultsManager {
         self.userDefaults = userDefaults
     }
     
-    public func get<T>(_ key: UserDefaultsKeys) -> T? {
-        return userDefaults.object(forKey: key.rawValue) as? T
+    public func get<T: Decodable>(_ key: UserDefaultsKeys) -> T? {
+        guard let data = userDefaults.data(forKey: key.rawValue) else {
+            return nil
+        }
+        
+        do {
+            let result = try JSONDecoder().decode(T.self, from: data)
+            return result
+        } catch {
+            return nil
+        }
     }
     
     public func remove(_ key: UserDefaultsKeys) {
         userDefaults.removeObject(forKey: key.rawValue)
     }
     
-    public func set(_ value: Any, for key: UserDefaultsKeys) {
-        userDefaults.set(value, forKey: key.rawValue)
+    public func set<T: Encodable>(_ value: T, for key: UserDefaultsKeys) {
+        do {
+            let data = try JSONEncoder().encode(value)
+            userDefaults.set(data, forKey: key.rawValue)
+        } catch { }
     }
     
 }

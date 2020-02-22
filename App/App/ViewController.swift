@@ -6,7 +6,7 @@ import AppServices
 
 class ViewController: UIViewController {
     
-    let repository = SecondsRepository()
+    let repository = SecondsRepository.shared
 
     override func viewDidLoad() {
         super.viewDidLoad()
