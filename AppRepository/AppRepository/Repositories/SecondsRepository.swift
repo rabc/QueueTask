@@ -44,7 +44,6 @@ public class SecondsRepository {
                 }
             }
             
-            print("send \(hour)")
             storedDates.append(HourData(seconds: seconds, hour: hour))
             userDefaults.set(storedDates, for: .hour)
             queueOperation(name: hour, hour: hour, seconds: seconds, handler: handler)
@@ -72,6 +71,7 @@ public class SecondsRepository {
             print("Error while sending \(hour): \(String(describing: error))")
         })
         
+        print("Queue [\(hour)]")
         queue.addOperations([operation], waitUntilFinished: false)
     }
     

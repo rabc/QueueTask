@@ -54,7 +54,9 @@ public class RequestOperation: Operation {
         session.dataTask(with: request) { [fail, success] (data, response, error) in
             defer { semaphore.signal() }
             
-            sleep(2)
+            /* Uncomment the line below to simulate a (big) delay */
+            //sleep(2)
+            
             guard let data = data else {
                 fail(error)
                 return
