@@ -8,14 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		143E3D11240140E100F9A127 /* AppRepository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 143E3D07240140E100F9A127 /* AppRepository.framework */; };
-		143E3D16240140E100F9A127 /* AppRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143E3D15240140E100F9A127 /* AppRepositoryTests.swift */; };
 		143E3D18240140E100F9A127 /* AppRepository.h in Headers */ = {isa = PBXBuildFile; fileRef = 143E3D0A240140E100F9A127 /* AppRepository.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		143E3D23240140F800F9A127 /* SecondsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143E3D22240140F800F9A127 /* SecondsRepository.swift */; };
 		143E3D262401411700F9A127 /* AppServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 143E3D252401411700F9A127 /* AppServices.framework */; };
-		143E3D2B240143A100F9A127 /* DateFormatCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143E3D2A240143A100F9A127 /* DateFormatCacheManager.swift */; };
-		143E3D2D2401443D00F9A127 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143E3D2C2401443D00F9A127 /* UserDefaultsManager.swift */; };
-		143E3D3F2401D9AC00F9A127 /* SecondsRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143E3D3E2401D9AC00F9A127 /* SecondsRepositoryTests.swift */; };
-		14D32936240DAD41002439FB /* QTSecondsRepository.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D32934240DAD41002439FB /* QTSecondsRepository.h */; };
+		1467A769240EF42000A41005 /* QTDateFormatCacheManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1467A767240EF42000A41005 /* QTDateFormatCacheManager.h */; };
+		1467A76A240EF42000A41005 /* QTDateFormatCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1467A768240EF42000A41005 /* QTDateFormatCacheManager.m */; };
+		1467A76E240EFE3300A41005 /* QTSeconds.h in Headers */ = {isa = PBXBuildFile; fileRef = 1467A76C240EFE3300A41005 /* QTSeconds.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1467A76F240EFE3300A41005 /* QTSeconds.m in Sources */ = {isa = PBXBuildFile; fileRef = 1467A76D240EFE3300A41005 /* QTSeconds.m */; };
+		1467A772240EFE4700A41005 /* QTHourData.h in Headers */ = {isa = PBXBuildFile; fileRef = 1467A770240EFE4700A41005 /* QTHourData.h */; };
+		1467A773240EFE4700A41005 /* QTHourData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1467A771240EFE4700A41005 /* QTHourData.m */; };
+		1467A77C240F113000A41005 /* QTSecondsRepositoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1467A77B240F113000A41005 /* QTSecondsRepositoryTests.m */; };
+		14D32936240DAD41002439FB /* QTSecondsRepository.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D32934240DAD41002439FB /* QTSecondsRepository.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		14D32937240DAD41002439FB /* QTSecondsRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D32935240DAD41002439FB /* QTSecondsRepository.m */; };
 /* End PBXBuildFile section */
 
@@ -34,13 +36,16 @@
 		143E3D0A240140E100F9A127 /* AppRepository.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppRepository.h; sourceTree = "<group>"; };
 		143E3D0B240140E100F9A127 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		143E3D10240140E100F9A127 /* AppRepositoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppRepositoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		143E3D15240140E100F9A127 /* AppRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRepositoryTests.swift; sourceTree = "<group>"; };
 		143E3D17240140E100F9A127 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		143E3D22240140F800F9A127 /* SecondsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondsRepository.swift; sourceTree = "<group>"; };
 		143E3D252401411700F9A127 /* AppServices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AppServices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		143E3D2A240143A100F9A127 /* DateFormatCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatCacheManager.swift; sourceTree = "<group>"; };
-		143E3D2C2401443D00F9A127 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
-		143E3D3E2401D9AC00F9A127 /* SecondsRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondsRepositoryTests.swift; sourceTree = "<group>"; };
+		1467A767240EF42000A41005 /* QTDateFormatCacheManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QTDateFormatCacheManager.h; sourceTree = "<group>"; };
+		1467A768240EF42000A41005 /* QTDateFormatCacheManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QTDateFormatCacheManager.m; sourceTree = "<group>"; };
+		1467A76C240EFE3300A41005 /* QTSeconds.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QTSeconds.h; sourceTree = "<group>"; };
+		1467A76D240EFE3300A41005 /* QTSeconds.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QTSeconds.m; sourceTree = "<group>"; };
+		1467A770240EFE4700A41005 /* QTHourData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QTHourData.h; sourceTree = "<group>"; };
+		1467A771240EFE4700A41005 /* QTHourData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QTHourData.m; sourceTree = "<group>"; };
+		1467A77A240F112F00A41005 /* AppRepositoryTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppRepositoryTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		1467A77B240F113000A41005 /* QTSecondsRepositoryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QTSecondsRepositoryTests.m; sourceTree = "<group>"; };
 		14D32934240DAD41002439FB /* QTSecondsRepository.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QTSecondsRepository.h; sourceTree = "<group>"; };
 		14D32935240DAD41002439FB /* QTSecondsRepository.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QTSecondsRepository.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,6 +92,7 @@
 		143E3D09240140E100F9A127 /* AppRepository */ = {
 			isa = PBXGroup;
 			children = (
+				1467A76B240EFE2C00A41005 /* Models */,
 				143E3D292401439B00F9A127 /* Managers */,
 				143E3D21240140EE00F9A127 /* Repositories */,
 				143E3D0A240140E100F9A127 /* AppRepository.h */,
@@ -98,9 +104,9 @@
 		143E3D14240140E100F9A127 /* AppRepositoryTests */ = {
 			isa = PBXGroup;
 			children = (
-				143E3D15240140E100F9A127 /* AppRepositoryTests.swift */,
 				143E3D17240140E100F9A127 /* Info.plist */,
-				143E3D3E2401D9AC00F9A127 /* SecondsRepositoryTests.swift */,
+				1467A77B240F113000A41005 /* QTSecondsRepositoryTests.m */,
+				1467A77A240F112F00A41005 /* AppRepositoryTests-Bridging-Header.h */,
 			);
 			path = AppRepositoryTests;
 			sourceTree = "<group>";
@@ -108,7 +114,6 @@
 		143E3D21240140EE00F9A127 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
-				143E3D22240140F800F9A127 /* SecondsRepository.swift */,
 				14D32934240DAD41002439FB /* QTSecondsRepository.h */,
 				14D32935240DAD41002439FB /* QTSecondsRepository.m */,
 			);
@@ -126,10 +131,21 @@
 		143E3D292401439B00F9A127 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				143E3D2A240143A100F9A127 /* DateFormatCacheManager.swift */,
-				143E3D2C2401443D00F9A127 /* UserDefaultsManager.swift */,
+				1467A767240EF42000A41005 /* QTDateFormatCacheManager.h */,
+				1467A768240EF42000A41005 /* QTDateFormatCacheManager.m */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		1467A76B240EFE2C00A41005 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1467A76C240EFE3300A41005 /* QTSeconds.h */,
+				1467A76D240EFE3300A41005 /* QTSeconds.m */,
+				1467A770240EFE4700A41005 /* QTHourData.h */,
+				1467A771240EFE4700A41005 /* QTHourData.m */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +155,11 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				143E3D18240140E100F9A127 /* AppRepository.h in Headers */,
 				14D32936240DAD41002439FB /* QTSecondsRepository.h in Headers */,
+				1467A769240EF42000A41005 /* QTDateFormatCacheManager.h in Headers */,
+				1467A76E240EFE3300A41005 /* QTSeconds.h in Headers */,
+				1467A772240EFE4700A41005 /* QTHourData.h in Headers */,
+				143E3D18240140E100F9A127 /* AppRepository.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,6 +218,7 @@
 					};
 					143E3D0F240140E100F9A127 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -243,10 +263,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1467A76F240EFE3300A41005 /* QTSeconds.m in Sources */,
 				14D32937240DAD41002439FB /* QTSecondsRepository.m in Sources */,
-				143E3D23240140F800F9A127 /* SecondsRepository.swift in Sources */,
-				143E3D2B240143A100F9A127 /* DateFormatCacheManager.swift in Sources */,
-				143E3D2D2401443D00F9A127 /* UserDefaultsManager.swift in Sources */,
+				1467A76A240EF42000A41005 /* QTDateFormatCacheManager.m in Sources */,
+				1467A773240EFE4700A41005 /* QTHourData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,8 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				143E3D16240140E100F9A127 /* AppRepositoryTests.swift in Sources */,
-				143E3D3F2401D9AC00F9A127 /* SecondsRepositoryTests.swift in Sources */,
+				1467A77C240F113000A41005 /* QTSecondsRepositoryTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,7 +461,7 @@
 		143E3D1F240140E100F9A127 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = AppRepositoryTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -452,6 +471,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ricardo.AppRepositoryTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AppRepositoryTests/AppRepositoryTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -460,7 +481,7 @@
 		143E3D20240140E100F9A127 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = AppRepositoryTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -470,6 +491,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ricardo.AppRepositoryTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AppRepositoryTests/AppRepositoryTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -38,7 +38,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to undo the changes made on entering the background.
         print("foreground")
         
-        SecondsRepository.shared.flush()
+        QTSecondsRepository.shared().flush()
     }
 
     func sceneDidEnterBackground(_ scene: UIScene) {

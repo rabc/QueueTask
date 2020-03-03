@@ -8,11 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		143E3CE324013F8900F9A127 /* AppServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 143E3CD924013F8800F9A127 /* AppServices.framework */; };
-		143E3CE824013F8900F9A127 /* AppServicesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143E3CE724013F8900F9A127 /* AppServicesTests.swift */; };
 		143E3CEA24013F8900F9A127 /* AppServices.h in Headers */ = {isa = PBXBuildFile; fileRef = 143E3CDC24013F8800F9A127 /* AppServices.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		143E3D3A2401D74600F9A127 /* RequestOperationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143E3D392401D74600F9A127 /* RequestOperationTests.swift */; };
-		143E3D3D2401D7EE00F9A127 /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143E3D3C2401D7EE00F9A127 /* MockURLSession.swift */; };
-		14D32931240DA3CF002439FB /* QTRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D3292F240DA3CF002439FB /* QTRequestOperation.h */; };
+		1467A776240F0A7A00A41005 /* QTRequestOperationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1467A775240F0A7A00A41005 /* QTRequestOperationTests.m */; };
+		1467A779240F0E5D00A41005 /* OHHTTPStubs.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1467A778240F0E5D00A41005 /* OHHTTPStubs.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		14D32931240DA3CF002439FB /* QTRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D3292F240DA3CF002439FB /* QTRequestOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		14D32932240DA3CF002439FB /* QTRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D32930240DA3CF002439FB /* QTRequestOperation.m */; };
 /* End PBXBuildFile section */
 
@@ -26,15 +25,28 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		1467A777240F0E4000A41005 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1467A779240F0E5D00A41005 /* OHHTTPStubs.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		143E3CD924013F8800F9A127 /* AppServices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AppServices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		143E3CDC24013F8800F9A127 /* AppServices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppServices.h; sourceTree = "<group>"; };
 		143E3CDD24013F8800F9A127 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		143E3CE224013F8900F9A127 /* AppServicesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppServicesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		143E3CE724013F8900F9A127 /* AppServicesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppServicesTests.swift; sourceTree = "<group>"; };
 		143E3CE924013F8900F9A127 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		143E3D392401D74600F9A127 /* RequestOperationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestOperationTests.swift; sourceTree = "<group>"; };
-		143E3D3C2401D7EE00F9A127 /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
+		1467A774240F0A7A00A41005 /* AppServicesTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppServicesTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		1467A775240F0A7A00A41005 /* QTRequestOperationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QTRequestOperationTests.m; sourceTree = "<group>"; };
+		1467A778240F0E5D00A41005 /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = ../Carthage/Build/iOS/OHHTTPStubs.framework; sourceTree = "<group>"; };
 		14D3292F240DA3CF002439FB /* QTRequestOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QTRequestOperation.h; sourceTree = "<group>"; };
 		14D32930240DA3CF002439FB /* QTRequestOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QTRequestOperation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -61,6 +73,7 @@
 		143E3CCF24013F8800F9A127 = {
 			isa = PBXGroup;
 			children = (
+				1467A778240F0E5D00A41005 /* OHHTTPStubs.framework */,
 				143E3CDB24013F8800F9A127 /* AppServices */,
 				143E3CE624013F8900F9A127 /* AppServicesTests */,
 				143E3CDA24013F8800F9A127 /* Products */,
@@ -89,10 +102,9 @@
 		143E3CE624013F8900F9A127 /* AppServicesTests */ = {
 			isa = PBXGroup;
 			children = (
-				143E3D3B2401D7EA00F9A127 /* Mocks */,
-				143E3CE724013F8900F9A127 /* AppServicesTests.swift */,
 				143E3CE924013F8900F9A127 /* Info.plist */,
-				143E3D392401D74600F9A127 /* RequestOperationTests.swift */,
+				1467A775240F0A7A00A41005 /* QTRequestOperationTests.m */,
+				1467A774240F0A7A00A41005 /* AppServicesTests-Bridging-Header.h */,
 			);
 			path = AppServicesTests;
 			sourceTree = "<group>";
@@ -104,14 +116,6 @@
 				14D32930240DA3CF002439FB /* QTRequestOperation.m */,
 			);
 			path = Request;
-			sourceTree = "<group>";
-		};
-		143E3D3B2401D7EA00F9A127 /* Mocks */ = {
-			isa = PBXGroup;
-			children = (
-				143E3D3C2401D7EE00F9A127 /* MockURLSession.swift */,
-			);
-			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +158,7 @@
 				143E3CDE24013F8900F9A127 /* Sources */,
 				143E3CDF24013F8900F9A127 /* Frameworks */,
 				143E3CE024013F8900F9A127 /* Resources */,
+				1467A777240F0E4000A41005 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -181,6 +186,7 @@
 					};
 					143E3CE124013F8900F9A127 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -233,9 +239,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				143E3CE824013F8900F9A127 /* AppServicesTests.swift in Sources */,
-				143E3D3D2401D7EE00F9A127 /* MockURLSession.swift in Sources */,
-				143E3D3A2401D74600F9A127 /* RequestOperationTests.swift in Sources */,
+				1467A776240F0A7A00A41005 /* QTRequestOperationTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,7 +428,9 @@
 		143E3CF124013F8900F9A127 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../Carthage/Build/iOS";
 				INFOPLIST_FILE = AppServicesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -433,6 +439,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ricardo.AppServicesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AppServicesTests/AppServicesTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -441,7 +449,9 @@
 		143E3CF224013F8900F9A127 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../Carthage/Build/iOS";
 				INFOPLIST_FILE = AppServicesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,6 +460,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ricardo.AppServicesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AppServicesTests/AppServicesTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

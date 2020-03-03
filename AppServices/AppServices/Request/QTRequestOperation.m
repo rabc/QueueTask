@@ -52,6 +52,9 @@ NSString * const kErrorDomain = @"app.services.error";
     [[[NSURLSession sharedSession] dataTaskWithRequest:request
                                      completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
         
+        /* Uncomment the line below to simulate a (big) delay */
+        sleep(2);
+
         if (!data) {
             NSError *error = [NSError errorWithDomain:kErrorDomain code:2 userInfo:nil];
             weakSelf.failureCallback(error);
@@ -69,6 +72,7 @@ NSString * const kErrorDomain = @"app.services.error";
 
 - (NSURLRequest *)buildRequestWithData:(NSData *)body url:(NSURL *)url {
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url];
+    [request addValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
     request.HTTPMethod = @"POST";
     request.HTTPBody = body;
     
