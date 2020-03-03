@@ -8,3 +8,4 @@ The workspace has 3 projects:
 
 `QTRequestOperation` line 56 has a `sleep` command to simulate delay, so you will be able to check the log message that will not send the same hour again while the operation is running.
 
+The project is using Carthage to include the library `OHHTTPStubs`. I included the compiled framework, but in case of any error just run: `carthage update --platform iOS`.
