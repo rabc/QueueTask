@@ -13,18 +13,10 @@ NSString * const kUserDefaultsHourKey = @"hour";
 
 @property (nonatomic, strong) NSUserDefaults *userDefaults;
 @property (nonatomic, strong) NSOperationQueue *queue;
-@property (nonatomic) dispatch_queue_t dispatch;
 
 @end
 
 @implementation QTSecondsRepository
-
-- (id)init {
-    if(self = [super init]) {
-        self.dispatch = dispatch_queue_create("seconds.dispatch.queue", DISPATCH_QUEUE_SERIAL);
-    }
-    return self;
-}
 
 + (QTSecondsRepository *)shared {
     static QTSecondsRepository *sharedManager = nil;
@@ -42,7 +34,6 @@ NSString * const kUserDefaultsHourKey = @"hour";
     NSString *hour = [formatter.fullHourFormat stringFromDate:date];
     NSString *seconds = [formatter.secondsFormat stringFromDate:date];
     
-//    dispatch_sync(self.dispatch, ^{
     @synchronized (self) {
         
         NSMutableArray<QTHourData *> *hoursData = [NSMutableArray arrayWithArray:[self allHoursData]];
